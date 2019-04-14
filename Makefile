@@ -15,6 +15,9 @@ dep:
 run:
 	.venv/bin/python app.py
 
+test:
+	pytest -v --cov-report term --cov=proxy tests/
+
 docker-remove-network:
 	docker network remove ${NETWORK} || true
 

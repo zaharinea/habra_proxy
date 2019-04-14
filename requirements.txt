@@ -8,6 +8,7 @@ beautifulsoup4==4.7.1
 certifi==2019.3.9
 cfgv==1.6.0
 chardet==3.0.4
+coverage==4.5.3
 identify==1.4.1
 idna==2.8
 idna-ssl==1.1.0
@@ -21,6 +22,7 @@ pre-commit==1.15.1
 py==1.8.0
 pytest==4.4.0
 pytest-aiohttp==0.3.0
+pytest-cov==2.6.1
 PyYAML==5.1
 six==1.12.0
 soupsieve==1.9
