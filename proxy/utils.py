@@ -28,7 +28,9 @@ def html_dom_walker(soup: BeautifulSoup) -> None:
                 not isinstance(child, element.Comment),
             ]
         ):
-            child.replace_with(convert_words(child.string))
+            converted_string = convert_words(child.string)
+            converted_string = converted_string.replace("&plus", "+")
+            child.replace_with(converted_string)
         html_dom_walker(child)
 
 
